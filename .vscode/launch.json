@@ -7,7 +7,12 @@
         {
             "name": "riverpod_flutter_starter",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--flavor",
+                "dev"
+            ]
         },
         {
             "name": "riverpod_flutter_starter (profile mode)",

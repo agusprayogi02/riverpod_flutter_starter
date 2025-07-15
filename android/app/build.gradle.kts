@@ -5,10 +5,14 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+val compileSdkVer = 35
+val ndkVer = "27.0.12077973"
+val minSdkVer = 21
+
 android {
-    namespace = "io.agus.starter"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    namespace = "io.agus.news_taz"
+    compileSdk = compileSdkVer
+    ndkVersion = ndkVer
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -24,17 +28,33 @@ android {
         applicationId = "io.agus.starter"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = minSdkVer
+        targetSdk = compileSdkVer
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
 
+    // enable if release
+    // signingConfigs {
+       // create("release") {
+        //    keyAlias = keystoreProperties["keyAlias"]
+        //    keyPassword = keystoreProperties["keyPassword"]
+        //    storeFile = file(keystoreProperties["storeFile"] ?: "")
+        //    storePassword = keystoreProperties["storePassword"]
+       // }
+    // }
+
     buildTypes {
-        release {
+        getByName("debug") {
+            isMinifyEnabled = true
+            signingConfig = signingConfigs["debug"]
+        }
+        getByName("release") {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs["debug"]
+            // if project release
+            // signingConfig = signingConfigs["release"]
         }
     }
 }
