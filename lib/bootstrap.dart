@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:starter/common/logging/logger.dart';
 import 'package:starter/presentation/pages/app_page.dart';
 
@@ -13,7 +14,7 @@ Future<void> bootstrap() async {
       FlutterError.onError = (FlutterErrorDetails details) {
         logger.error(details.exceptionAsString(), details.exception, details.stack);
       };
-      runApp(AppPage(navigatorKey: navigatorKey));
+      runApp(ProviderScope(child: AppPage(navigatorKey: navigatorKey)));
     },
     (Object error, StackTrace stackTrace) => logger.error(error.toString(), error, stackTrace),
   );

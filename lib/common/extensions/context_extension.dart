@@ -69,7 +69,7 @@ extension BuildContextX on BuildContext {
             10.horizontalSpaceRadius,
             Text(
               message,
-              style: AppStyles.text14Px.copyWith(color: ColorTheme.neutral.shade600),
+              style: AppStyles.text14Px.copyWith(color: ColorTheme.grey.shade600),
             ).expand(),
           ],
         ),

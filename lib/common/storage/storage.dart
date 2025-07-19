@@ -3,10 +3,19 @@ import 'dart:typed_data';
 
 import 'package:dio/dio.dart';
 import 'package:file_selector/file_selector.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:path/path.dart' as p;
+import 'package:starter/common/permission/permission_impl.dart';
 
 import '../permission/permission.dart';
 import 'storage_path.dart';
+
+final storageInterfaceProvider = Provider<StorageInterface>((ref) {
+  return Storage(
+    permission: ref.read(permissionProvider),
+    storagePath: ref.read(storagePathProvider),
+  );
+});
 
 abstract class StorageInterface {
   const StorageInterface();

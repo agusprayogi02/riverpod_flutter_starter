@@ -34,9 +34,9 @@ class CustomButton extends StatelessWidget {
               : Text(
                   label,
                   style: labelStyle?.copyWith(
-                          color: isDisabled ? textColor.withOpacity(0.6) : textColor) ??
+                          color: isDisabled ? textColor.withAlpha(153) : textColor) ??
                       AppStyles.text16PxSemiBold
-                          .copyWith(color: isDisabled ? textColor.withOpacity(0.6) : textColor),
+                          .copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor),
                 )
         ];
 
@@ -70,10 +70,10 @@ class CustomButton extends StatelessWidget {
             ],
             Text(
               label,
-              style: labelStyle?.copyWith(
-                      color: isDisabled ? textColor.withOpacity(0.6) : textColor) ??
-                  AppStyles.text16PxSemiBold
-                      .copyWith(color: isDisabled ? textColor.withOpacity(0.6) : textColor),
+              style:
+                  labelStyle?.copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor) ??
+                      AppStyles.text16PxSemiBold
+                          .copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor),
             ),
             if (rightIcon) ...[
               gap.horizontalSpace,
@@ -112,10 +112,10 @@ class CustomButton extends StatelessWidget {
             ],
             Text(
               label,
-              style: labelStyle?.copyWith(
-                      color: isDisabled ? textColor.withOpacity(0.6) : textColor) ??
-                  AppStyles.text16PxSemiBold
-                      .copyWith(color: isDisabled ? textColor.withOpacity(0.6) : textColor),
+              style:
+                  labelStyle?.copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor) ??
+                      AppStyles.text16PxSemiBold
+                          .copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor),
             ),
             if (rightIcon) ...[
               gap.horizontalSpace,
@@ -147,10 +147,10 @@ class CustomButton extends StatelessWidget {
           else
             Text(
               label,
-              style: labelStyle?.copyWith(
-                      color: isDisabled ? textColor.withOpacity(0.6) : textColor) ??
-                  AppStyles.text16PxSemiBold
-                      .copyWith(color: isDisabled ? textColor.withOpacity(0.6) : textColor),
+              style:
+                  labelStyle?.copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor) ??
+                      AppStyles.text16PxSemiBold
+                          .copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor),
             )
         ];
 
@@ -178,7 +178,7 @@ class CustomButton extends StatelessWidget {
       type: MaterialType.button,
       child: InkWell(
         onTap: (isDisabled || loading) ? null : onPressed,
-        splashColor: splashColor.withOpacity(0.4),
+        splashColor: splashColor.withAlpha(102),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 400),
           curve: Curves.linearToEaseOut,
@@ -234,10 +234,9 @@ class CustomOutlinedButton extends StatelessWidget {
   }) : children = [
           Text(
             label,
-            style:
-                labelStyle?.copyWith(color: isDisabled ? textColor.withOpacity(0.6) : textColor) ??
-                    AppStyles.text16PxSemiBold
-                        .copyWith(color: isDisabled ? textColor.withOpacity(0.6) : textColor),
+            style: labelStyle?.copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor) ??
+                AppStyles.text16PxSemiBold
+                    .copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor),
           )
         ];
 
@@ -269,10 +268,10 @@ class CustomOutlinedButton extends StatelessWidget {
             ],
             Text(
               label,
-              style: labelStyle?.copyWith(
-                      color: isDisabled ? textColor.withOpacity(0.6) : textColor) ??
-                  AppStyles.text16PxSemiBold
-                      .copyWith(color: isDisabled ? textColor.withOpacity(0.6) : textColor),
+              style:
+                  labelStyle?.copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor) ??
+                      AppStyles.text16PxSemiBold
+                          .copyWith(color: isDisabled ? textColor.withAlpha(153) : textColor),
             ),
             if (rightIcon) ...[
               gap.horizontalSpace,
@@ -309,7 +308,7 @@ class CustomOutlinedButton extends StatelessWidget {
       type: MaterialType.button,
       child: InkWell(
         onTap: (isDisabled || loading) ? null : onPressed,
-        splashColor: splashColor.withOpacity(0.4),
+        splashColor: splashColor.withAlpha(102),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 400),
           curve: Curves.linearToEaseOut,

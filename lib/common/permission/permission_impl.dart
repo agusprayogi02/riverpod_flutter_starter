@@ -1,6 +1,11 @@
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import 'permission.dart';
+
+final permissionProvider = Provider<PermissionInterface>((ref) {
+  return AppPermission();
+});
 
 class AppPermission extends PermissionInterface {
   const AppPermission() : super();

@@ -1,9 +1,14 @@
 import 'dart:io' show Platform;
 
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
 import '../utils/config.dart';
+
+final storagePathProvider = Provider<StoragePathInterface>((ref) {
+  return StoragePath();
+});
 
 abstract class StoragePathInterface {
   final String temporary;

@@ -10,3 +10,7 @@ class Constants {
     'validation_error': (e) => (e as String),
   };
 }
+
+class ImageAssetConst {
+  static String uploadSvg = "assets/icons/upload-filled.svg";
+}
