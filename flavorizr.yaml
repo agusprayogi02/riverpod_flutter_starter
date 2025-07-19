@@ -1,0 +1,11 @@
+flavors:
+  staging:
+    app:
+      name: "Starter Staging"
+    ios:
+      bundleId: "io.agus.staging.starter"
+  production:
+    app:
+      name: "Starter"
+    ios:
+      bundleId: "io.agus.app.starter"

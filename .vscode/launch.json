@@ -11,20 +11,34 @@
             "flutterMode": "debug",
             "args": [
                 "--flavor",
-                "dev"
+                "dev",
+                "-t",
+                "main.dart",
             ]
         },
         {
             "name": "riverpod_flutter_starter (profile mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "flutterMode": "profile",
+            "args": [
+                "--flavor",
+                "staging",
+                "-t",
+                "main_staging.dart",
+            ]
         },
         {
             "name": "riverpod_flutter_starter (release mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "flutterMode": "release",
+            "args": [
+                "--flavor",
+                "prod",
+                "-t",
+                "main_prod.dart",
+            ]
         }
     ]
 }

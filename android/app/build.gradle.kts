@@ -10,7 +10,7 @@ val ndkVer = "27.0.12077973"
 val minSdkVer = 21
 
 android {
-    namespace = "io.agus.news_taz"
+    namespace = "io.agus.starter"
     compileSdk = compileSdkVer
     ndkVersion = ndkVer
 
@@ -43,6 +43,28 @@ android {
         //    storePassword = keystoreProperties["storePassword"]
        // }
     // }
+
+    flavorDimensions += "environment"
+
+    productFlavors {
+        create("staging") {
+            dimension = "environment"
+            applicationId = "io.agus.staging.starter"
+            resValue("string", "app_name", "Starter Staging")
+        }
+
+        create("production") {
+            dimension = "environment"
+            applicationId = "io.agus.app.starter"
+            resValue("string", "app_name", "Starter")
+        }
+    }
+
+    sourceSets {
+        getByName("main").java.srcDirs("src/main/kotlin")
+        getByName("staging").setRoot("src/staging")
+        getByName("production").setRoot("src/production")
+    }
 
     buildTypes {
         getByName("debug") {
