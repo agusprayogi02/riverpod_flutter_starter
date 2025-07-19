@@ -27,6 +27,10 @@ abstract class ApiService {
           printRequestHeaders: true,
           printResponseHeaders: true,
           printResponseMessage: true,
+          printErrorHeaders: true,
+          printErrorData: true,
+          printErrorMessage: true,
+          printResponseTime: true,
         ),
       ),
     );
