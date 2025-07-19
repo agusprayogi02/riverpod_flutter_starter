@@ -9,7 +9,7 @@ class AuthRoute {
       path: LoginPage.path,
       name: LoginPage.path,
       builder: (context, state) => LoginPage(
-        isAddAccount: state.extra as bool,
+        isAddAccount: state.extra != null ? state.extra as bool : false,
       ),
     ),
     GoRoute(

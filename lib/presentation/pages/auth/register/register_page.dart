@@ -82,30 +82,30 @@ class RegisterPage extends HookConsumerWidget {
                 },
               ),
               32.verticalSpacingRadius,
-              Row(
-                children: [
-                  Expanded(
-                    child: Divider(
-                      color: ColorTheme.grey[300],
-                      thickness: 1,
-                      indent: 24.r,
-                      endIndent: 8.r,
-                    ),
-                  ),
-                  Text(
-                    "Or Sign in with",
-                    style: AppStyles.text14PxMedium.copyWith(color: ColorTheme.grey[300]),
-                  ),
-                  Expanded(
-                    child: Divider(
-                      color: ColorTheme.grey[300],
-                      thickness: 1,
-                      indent: 24.r,
-                      endIndent: 8.r,
-                    ),
-                  ),
-                ],
-              ),
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       child: Divider(
+              //         color: ColorTheme.grey[300],
+              //         thickness: 1,
+              //         indent: 24.r,
+              //         endIndent: 8.r,
+              //       ),
+              //     ),
+              //     Text(
+              //       "Or Sign in with",
+              //       style: AppStyles.text14PxMedium.copyWith(color: ColorTheme.grey[300]),
+              //     ),
+              //     Expanded(
+              //       child: Divider(
+              //         color: ColorTheme.grey[300],
+              //         thickness: 1,
+              //         indent: 24.r,
+              //         endIndent: 8.r,
+              //       ),
+              //     ),
+              //   ],
+              // ),
               68.verticalSpacingRadius,
               Align(
                 alignment: Alignment.center,

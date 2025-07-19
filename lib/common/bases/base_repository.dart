@@ -37,9 +37,9 @@ class BaseRepository {
       try {
         if (isAuth) {
           if (await _session.hasSession) {
-            final token = await _session.token;
+            final session = await _session.session;
             _dio.options.headers.addAll({
-              "Authorization": "Bearer $token",
+              "Authorization": "Bearer ${session?.accessToken}",
             });
           } else {
             _dio.options.headers.remove("Authorization");
@@ -50,7 +50,7 @@ class BaseRepository {
         final response = await request(_dio);
 
         if (response.statusCode == 401) {
-          await _session.deleteToken();
+          await _session.deleteSession();
         }
         var data = response.data;
         if (response.statusCode! >= 200 || response.statusCode! < 300) {
