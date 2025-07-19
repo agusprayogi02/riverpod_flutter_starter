@@ -13,7 +13,7 @@ class DevModeController extends StateNotifier<int> {
       // PackageInfo packageInfo = await PackageInfo.fromPlatform();
       // final e = DeveloperEntity(
       //   mode: "staging",
-      //   baseUrl: "https://staging.imajibox.com/api/",
+      //   baseUrl: "",
       //   version: packageInfo.version,
       // );
       // await locator<DeveloperSource>().setDev(e);

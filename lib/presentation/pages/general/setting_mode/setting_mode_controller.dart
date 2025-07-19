@@ -20,7 +20,7 @@ class SettingModeController extends StateNotifier<int> {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     final e = DeveloperEntity(
       mode: params["channel"],
-      baseUrl: "https://staging.imajibox.com/api/",
+      baseUrl: "",
       version: packageInfo.version,
     );
     await ref.read(developerSourceProvider).setDev(e);
