@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:starter/presentation/pages/error/error_page.dart';
 import 'package:starter/presentation/pages/splash_page.dart';
+import 'package:starter/presentation/routers/routes/auth_route.dart';
 import 'package:starter/presentation/routers/routes/general_route.dart';
 
 class AppRouter {
@@ -18,6 +19,7 @@ class AppRouter {
           name: SplashPage.path,
           builder: (context, state) => const SplashPage(),
         ),
+        ...AuthRoute.routes,
         ...GeneralRoute.routes,
       ],
     );

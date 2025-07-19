@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:reactive_forms/reactive_forms.dart';
 
 class Constants {
@@ -9,6 +11,12 @@ class Constants {
     ValidationMessage.maxLength: (e) => 'Maksimal ${(e as Map)['requiredLength']} karakter',
     'validation_error': (e) => (e as String),
   };
+  static EdgeInsets btnPadding = EdgeInsets.symmetric(
+    horizontal: 16.r,
+    vertical: 8.r,
+  );
+
+  static String prod = "production";
 }
 
 class ImageAssetConst {

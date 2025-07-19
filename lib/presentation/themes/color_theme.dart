@@ -40,6 +40,19 @@ class ColorTheme {
     900: Color(0xFF194185),
   });
 
+  static const blueLight = MaterialColor(0xFF0BA5EC, <int, Color>{
+    50: Color(0xFFF0F9FF),
+    100: Color(0xFFE0F2FE),
+    200: Color(0xFFB9E6FE),
+    300: Color(0xFF7CD4FD),
+    400: Color(0xFF36BFFA),
+    500: Color(0xFF0BA5EC),
+    600: Color(0xFF0086C9),
+    700: Color(0xFF026AA2),
+    800: Color(0xFF065986),
+    900: Color(0xFF0B4A6F),
+  });
+
   static const warning = MaterialColor(0xFFF79009, <int, Color>{
     50: Color(0xFFFFFAEB),
     100: Color(0xFFFEF0C7),
