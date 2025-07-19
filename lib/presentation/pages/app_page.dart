@@ -27,7 +27,6 @@ class _AppPageState extends State<AppPage> {
   Widget build(BuildContext context) {
     return FlavorBanner(
       child: MaterialApp.router(
-        routerConfig: _appRouter,
         theme: AppCoreTheme.theme,
         darkTheme: AppCoreTheme.theme,
         debugShowCheckedModeBanner: false,

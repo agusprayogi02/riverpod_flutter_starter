@@ -47,6 +47,12 @@ android {
     flavorDimensions += "environment"
 
     productFlavors {
+        create("dev") {
+            dimension = "environment"
+            applicationId = "io.agus.app.dev"
+            resValue("string", "app_name", "Starter Dev")
+        }
+
         create("staging") {
             dimension = "environment"
             applicationId = "io.agus.staging.starter"
@@ -62,6 +68,7 @@ android {
 
     sourceSets {
         getByName("main").java.srcDirs("src/main/kotlin")
+        getByName("dev").setRoot("src/dev")
         getByName("staging").setRoot("src/staging")
         getByName("production").setRoot("src/production")
     }

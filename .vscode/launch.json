@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "riverpod_flutter_starter",
+            "name": "Starter Dev",
             "request": "launch",
             "type": "dart",
             "flutterMode": "debug",
@@ -13,11 +13,11 @@
                 "--flavor",
                 "dev",
                 "-t",
-                "main.dart",
+                "lib/main.dart",
             ]
         },
         {
-            "name": "riverpod_flutter_starter (profile mode)",
+            "name": "Starter Staging",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile",
@@ -25,11 +25,11 @@
                 "--flavor",
                 "staging",
                 "-t",
-                "main_staging.dart",
+                "lib/main_staging.dart",
             ]
         },
         {
-            "name": "riverpod_flutter_starter (release mode)",
+            "name": "Starter Production",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release",
@@ -37,7 +37,7 @@
                 "--flavor",
                 "prod",
                 "-t",
-                "main_prod.dart",
+                "lib/main_prod.dart",
             ]
         }
     ]
