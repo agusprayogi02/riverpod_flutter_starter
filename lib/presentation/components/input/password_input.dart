@@ -78,10 +78,7 @@ class _PasswordInputState extends State<PasswordInput> {
           keyboardType: TextInputType.visiblePassword,
           validationMessages: messages,
           decoration: InputDecoration(
-            contentPadding: EdgeInsets.symmetric(
-              horizontal: 16.r,
-              vertical: 12.r,
-            ),
+            contentPadding: EdgeInsets.symmetric(horizontal: 16.r, vertical: 14.r),
             fillColor: Colors.white,
             filled: true,
             hintText: widget.hint,

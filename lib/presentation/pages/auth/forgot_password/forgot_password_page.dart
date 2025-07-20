@@ -55,6 +55,7 @@ class ForgotPasswordPage extends HookConsumerWidget {
                 isRequiredText: true,
                 prefix: Icon(Icons.email_outlined),
                 textInputType: TextInputType.emailAddress,
+                rounded: true,
               ),
               const Spacer(),
               ReactiveFormConsumer(

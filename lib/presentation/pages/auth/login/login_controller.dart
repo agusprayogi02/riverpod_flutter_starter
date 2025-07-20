@@ -7,8 +7,8 @@ class LoginController extends StateNotifier<int> {
   LoginController(super.state, {required this.context, required this.isAddAccount});
 
   final form = fb.group({
-    'email': fb.control<String>(''),
-    'password': fb.control<String>(''),
+    'email': fb.control<String>('', [Validators.required, Validators.email]),
+    'password': fb.control<String>('', [Validators.required]),
   });
 
   Future<void> onLogin(Map<String, dynamic> json, {bool isAddAccount = false}) async {
