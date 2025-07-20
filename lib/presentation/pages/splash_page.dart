@@ -65,7 +65,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
         height: double.infinity,
         width: double.infinity,
         alignment: Alignment.center,
-        decoration: BoxDecoration(color: ColorTheme.primary),
+        decoration: BoxDecoration(color: AppCoreTheme.primaryColor),
         child: const BaseLogo(),
       ),
     );

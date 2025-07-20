@@ -11,8 +11,14 @@ import '../widgets/top_snackbar.dart';
 
 extension BuildContextX on BuildContext {
   ThemeData get theme => Theme.of(this);
+  TextTheme get textTheme => Theme.of(this).textTheme;
+  ColorScheme get colorScheme => Theme.of(this).colorScheme;
+  Brightness get brightness => View.of(this).platformDispatcher.platformBrightness;
 
   GoRouter get route => GoRouter.of(this);
+  Size get size => MediaQuery.of(this).size;
+  double get width => MediaQuery.of(this).size.width;
+  double get height => MediaQuery.of(this).size.height;
 
   void go(String location, {Object? extra}) {
     route.go(location, extra: extra);
@@ -21,16 +27,6 @@ extension BuildContextX on BuildContext {
   void popUntil(String path) {
     Navigator.popUntil(this, (state) => state.settings.name == path);
   }
-
-  ColorScheme get colorScheme => Theme.of(this).colorScheme;
-
-  TextTheme get textTheme => Theme.of(this).textTheme;
-
-  Size get size => MediaQuery.of(this).size;
-
-  double get width => MediaQuery.of(this).size.width;
-
-  double get height => MediaQuery.of(this).size.height;
 
   Future<T?> showCustomDialog<T>({
     Widget? title,
@@ -144,7 +140,7 @@ extension BuildContextX on BuildContext {
             height: 150.h,
             color: Colors.white,
             child: LoadingIndicatorWidget(
-              color: ColorTheme.primary,
+              color: AppCoreTheme.primaryColor,
               semanticsLabel: message,
             ),
           ),

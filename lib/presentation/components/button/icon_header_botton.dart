@@ -25,7 +25,7 @@ class IconHeaderButton extends StatelessWidget {
       style: IconButton.styleFrom(
         padding: EdgeInsets.zero,
         iconSize: 24.r,
-        foregroundColor: ColorTheme.primary,
+        foregroundColor: AppCoreTheme.primaryColor,
       ),
       icon: Badge(
         isLabelVisible: badgeCount != null && badgeCount! > 0,

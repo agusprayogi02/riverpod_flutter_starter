@@ -26,6 +26,15 @@ class _AppPageState extends State<AppPage> {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = View.of(context).platformDispatcher.platformBrightness;
+
+    // Retrieves the default theme for the platform
+    //TextTheme textTheme = Theme.of(context).textTheme;
+
+    // Use with Google Fonts package to use downloadable fonts
+    TextTheme textTheme = createTextTheme(context, "Lato", "Poppins");
+
+    MaterialTheme theme = MaterialTheme(textTheme);
     return ScreenUtilInit(
       designSize: const Size(393, 852),
       minTextAdapt: true,
@@ -34,8 +43,8 @@ class _AppPageState extends State<AppPage> {
       builder: (context, child) {
         return FlavorBanner(
           child: MaterialApp.router(
-            theme: AppCoreTheme.theme,
-            darkTheme: AppCoreTheme.theme,
+            // title: ,
+            theme: brightness == Brightness.light ? theme.light() : theme.dark(),
             debugShowCheckedModeBanner: false,
             routeInformationProvider: _appRouter.routeInformationProvider,
             routeInformationParser: _appRouter.routeInformationParser,

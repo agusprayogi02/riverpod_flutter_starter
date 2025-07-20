@@ -30,7 +30,7 @@ class BottomNavigation extends HookConsumerWidget {
     ];
     // return DotBottomNav(
     //   hideOnScroll: false,
-    //   indicatorColor: ColorTheme.primary,
+    //   indicatorColor: AppCoreTheme.primaryColor,
     //   backgroundColor: ColorTheme.white,
     //   animationDuration: const Duration(milliseconds: 300),
     //   animationCurve: Curves.ease,
@@ -76,7 +76,7 @@ class BottomNavigation extends HookConsumerWidget {
       currentIndex: currentIndex,
       onTap: onTap,
       showUnselectedLabels: true,
-      selectedItemColor: ColorTheme.primary,
+      selectedItemColor: AppCoreTheme.primaryColor,
       unselectedItemColor: ColorTheme.grey.shade400,
       iconSize: 24.r,
       type: BottomNavigationBarType.fixed,
@@ -92,7 +92,7 @@ class BottomNavigation extends HookConsumerWidget {
           ).pOnly(bottom: 2),
           activeIcon: Icon(
             item['icon'] as IconData,
-            color: ColorTheme.primary,
+            color: AppCoreTheme.primaryColor,
           ).pOnly(bottom: 2),
           label: item['title'] as String,
         );

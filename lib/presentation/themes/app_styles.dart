@@ -3,7 +3,7 @@ part of 'theme.dart';
 abstract class AppStyles {
   // text 9px
   //regular
-  static TextStyle text7Px = GoogleFonts.lato(
+  static TextStyle text7Px = GoogleFonts.poppins(
     fontSize: 7.r,
     height: calculateHeight(10, 7),
     fontStyle: FontStyle.normal,

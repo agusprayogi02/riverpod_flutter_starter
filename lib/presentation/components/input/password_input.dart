@@ -106,15 +106,29 @@ class _PasswordInputState extends State<PasswordInput> {
             ),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(borderRadius),
-              borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+              borderSide: const BorderSide(color: AppCoreTheme.primaryColor),
             ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(borderRadius),
+              borderSide: const BorderSide(color: AppCoreTheme.primaryColor),
+            ),
+            errorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(borderRadius),
+              borderSide: const BorderSide(color: ColorTheme.error),
+            ),
+            focusedErrorBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(borderRadius),
+              borderSide: const BorderSide(color: ColorTheme.error),
+            ),
+            hintStyle: AppStyles.text14Px.copyWith(color: ColorTheme.grey[400]),
+            errorStyle: AppStyles.text14Px.copyWith(color: ColorTheme.error),
             disabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(borderRadius),
-              borderSide: BorderSide(color: ColorTheme.grey[200]!, width: 1),
+              borderSide: BorderSide(color: ColorTheme.grey[200]!),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(borderRadius),
-              borderSide: BorderSide(color: ColorTheme.grey[300]!, width: 1),
+              borderSide: BorderSide(color: ColorTheme.grey[300]!),
             ),
           ),
         ),

@@ -91,7 +91,7 @@ class _DateRangePickerInputState extends State<DateRangePickerInput> {
             suffixIcon: widget.suffix,
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(borderRadius),
-              borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+              borderSide: const BorderSide(color: AppCoreTheme.primaryColor, width: 1),
             ),
             disabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(borderRadius),

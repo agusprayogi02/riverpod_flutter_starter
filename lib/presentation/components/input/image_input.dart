@@ -83,7 +83,7 @@ class _ImageInputState extends State<ImageInput> {
                   radius: 8.r,
                 )
               : DashedBorderBox(
-                  color: ColorTheme.primary,
+                  color: AppCoreTheme.primaryColor,
                   child: Container(
                     width: double.infinity,
                     height: 101.r,
@@ -95,13 +95,13 @@ class _ImageInputState extends State<ImageInput> {
                         Icon(
                           widget.hintIcon,
                           size: 16.r,
-                          color: ColorTheme.primary,
+                          color: AppCoreTheme.primaryColor,
                         ),
                         8.horizontalSpaceRadius,
                         Text(
                           widget.hint,
                           style: AppStyles.text12PxSemiBold.copyWith(
-                            color: ColorTheme.primary,
+                            color: AppCoreTheme.primaryColor,
                           ),
                         ),
                       ],

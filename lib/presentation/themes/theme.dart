@@ -12,4 +12,6 @@ part 'color_theme.dart';
 part 'core_color.dart';
 part 'core_theme.dart';
 part 'generate_theme.dart';
+part 'material_theme.dart';
 part 'text_theme.dart';
+part 'util_theme.dart';

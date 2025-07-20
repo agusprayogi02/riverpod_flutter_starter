@@ -5,7 +5,7 @@ abstract class ButtonStyles {
     minimumSize: Size(0, 32.r),
     padding: Constants.btnPadding,
     backgroundColor: ColorTheme.blueLight.shade100,
-    foregroundColor: ColorTheme.primary,
+    foregroundColor: AppCoreTheme.primaryColor,
     textStyle: AppStyles.text12PxSemiBold,
     shape: RoundedRectangleBorder(borderRadius: 32.rounded),
     elevation: 0,
@@ -14,7 +14,7 @@ abstract class ButtonStyles {
   static final ButtonStyle elevRoundedIcon = ElevatedButton.styleFrom(
     minimumSize: Size(0, 48.r),
     padding: Constants.btnPadding,
-    backgroundColor: ColorTheme.primary,
+    backgroundColor: AppCoreTheme.primaryColor,
     foregroundColor: ColorTheme.white,
     iconColor: ColorTheme.white,
     textStyle: AppStyles.text12Px,
@@ -25,7 +25,7 @@ abstract class ButtonStyles {
   static final ButtonStyle circleIcon = ElevatedButton.styleFrom(
     minimumSize: Size(48.r, 48.r),
     padding: Constants.btnPadding,
-    backgroundColor: ColorTheme.primary,
+    backgroundColor: AppCoreTheme.primaryColor,
     foregroundColor: ColorTheme.white,
     iconColor: ColorTheme.white,
     textStyle: AppStyles.text12Px,
@@ -34,7 +34,7 @@ abstract class ButtonStyles {
   );
 
   static final ButtonStyle iconFilled = IconButton.styleFrom(
-    foregroundColor: ColorTheme.primary,
+    foregroundColor: AppCoreTheme.primaryColor,
     backgroundColor: ColorTheme.grey[100],
     minimumSize: Size(40.r, 40.r),
   );

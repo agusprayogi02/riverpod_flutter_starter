@@ -77,7 +77,7 @@ class LoginPage extends HookConsumerWidget {
                   child: Text(
                     "Forgot Password",
                     style: AppStyles.text12PxMedium.copyWith(
-                      color: ColorTheme.primary,
+                      color: AppCoreTheme.primaryColor,
                     ),
                   ),
                 ),
@@ -136,7 +136,7 @@ class LoginPage extends HookConsumerWidget {
                       TextSpan(
                         text: "Sign up here",
                         style: AppStyles.text14PxBold.copyWith(
-                          color: ColorTheme.primary,
+                          color: AppCoreTheme.primaryColor,
                         ),
                         recognizer: TapGestureRecognizer()..onTap = c.goRegister,
                       ),

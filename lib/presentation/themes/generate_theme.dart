@@ -8,7 +8,7 @@ class GenerateTheme {
         hintText: hint,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+          borderSide: const BorderSide(color: AppCoreTheme.primaryColor, width: 1),
         ),
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -30,7 +30,7 @@ class GenerateTheme {
         hintText: hint,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(rounded ? 40 : 12),
-          borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+          borderSide: const BorderSide(color: AppCoreTheme.primaryColor, width: 1),
         ),
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(rounded ? 40 : 12),
@@ -49,11 +49,11 @@ class GenerateTheme {
         hintText: hint,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+          borderSide: const BorderSide(color: AppCoreTheme.primaryColor, width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+          borderSide: const BorderSide(color: AppCoreTheme.primaryColor, width: 1),
         ),
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
@@ -75,7 +75,7 @@ class GenerateTheme {
           width: (index == i) ? 10 : 6,
           duration: const Duration(milliseconds: 500),
           decoration: BoxDecoration(
-            color: index == i ? ColorTheme.primary : ColorTheme.grey[300],
+            color: index == i ? AppCoreTheme.primaryColor : ColorTheme.grey[300],
             borderRadius: BorderRadius.circular(12),
           ),
         ),

@@ -37,13 +37,13 @@ class FooterActionButton extends HookConsumerWidget {
               Icon(
                 isLiked ? IconsaxPlusBold.like_1 : IconsaxPlusLinear.like_1,
                 size: 24.r,
-                color: isLiked ? ColorTheme.primary : ColorTheme.grey.shade400,
+                color: isLiked ? AppCoreTheme.primaryColor : ColorTheme.grey.shade400,
               ),
               4.horizontalSpace,
               Text(
                 '${likeCount ?? 2.5}',
                 style: AppStyles.text14PxSemiBold.copyWith(
-                  color: isLiked ? ColorTheme.primary : ColorTheme.grey.shade500,
+                  color: isLiked ? AppCoreTheme.primaryColor : ColorTheme.grey.shade500,
                 ),
               ),
             ],

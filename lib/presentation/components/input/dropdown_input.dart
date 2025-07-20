@@ -67,11 +67,11 @@ class DropdownInput<T extends Object> extends StatelessWidget {
         suffixIcon: suffix,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+          borderSide: const BorderSide(color: AppCoreTheme.primaryColor, width: 1),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(borderRadius),
-          borderSide: const BorderSide(color: ColorTheme.primary, width: 1),
+          borderSide: const BorderSide(color: AppCoreTheme.primaryColor, width: 1),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(borderRadius),

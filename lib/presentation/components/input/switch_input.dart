@@ -32,7 +32,7 @@ class SwitchInput extends StatelessWidget {
             if (states.contains(WidgetState.disabled)) {
               return ColorTheme.grey.shade400.withAlpha(0x48);
             } else if (states.contains(WidgetState.selected)) {
-              return ColorTheme.primary;
+              return AppCoreTheme.primaryColor;
             }
             return ColorTheme.grey.shade400;
           }),
@@ -69,7 +69,7 @@ class SwitchInput extends StatelessWidget {
               : Text(
                   title,
                   style: AppStyles.text14PxMedium.copyWith(
-                    color: ColorTheme.primary,
+                    color: AppCoreTheme.primaryColor,
                   ),
                 ),
           if (controlAffinity == ListTileControlAffinity.trailing) field,

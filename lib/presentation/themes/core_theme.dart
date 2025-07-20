@@ -1,21 +1,22 @@
 part of 'theme.dart';
 
 class AppCoreTheme {
-  static const int primaryColorValue = 0xFFC1272D;
+  static const int primaryColorValue = 0xff006e25;
   static const primaryColor = Color(primaryColorValue);
+
   static const MaterialColor primarySwatch = MaterialColor(
     primaryColorValue,
     <int, Color>{
-      50: Color(0xFFF8E5E6),
-      100: Color(0xFFECBEC0),
-      200: Color(0xFFE09396),
-      300: Color(0xFFD4686C),
-      400: Color(0xFFCA474D),
+      50: Color(0xFFE0F2E6),
+      100: Color(0xFFB3DFC0),
+      200: Color(0xFF80CA96),
+      300: Color(0xFF4DB56C),
+      400: Color(0xFF26A54D),
       500: Color(primaryColorValue),
-      600: Color(0xFFBB2328),
-      700: Color(0xFFB31D22),
-      800: Color(0xFFAB171C),
-      900: Color(0xFF9E0E11),
+      600: Color(0xFF006622),
+      700: Color(0xFF005B1D),
+      800: Color(0xFF005119),
+      900: Color(0xFF003F10),
     },
   );
 

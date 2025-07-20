@@ -28,7 +28,7 @@ class AddNewButton extends HookConsumerWidget {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           borderRadius: 8.rounded,
-          border: Border.all(color: ColorTheme.primary),
+          border: Border.all(color: AppCoreTheme.primaryColor),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,13 +36,13 @@ class AddNewButton extends HookConsumerWidget {
             Icon(
               IconsaxPlusLinear.add,
               size: 24.r,
-              color: color ?? ColorTheme.primary,
+              color: color ?? AppCoreTheme.primaryColor,
             ),
             8.horizontalSpaceRadius,
             Text(
               title,
               style: AppStyles.text14PxBold.copyWith(
-                color: color ?? ColorTheme.primary,
+                color: color ?? AppCoreTheme.primaryColor,
               ),
             ),
           ],

@@ -116,7 +116,7 @@ class RegisterPage extends HookConsumerWidget {
                     children: [
                       TextSpan(
                         text: "Sign in here",
-                        style: AppStyles.text14PxBold.copyWith(color: ColorTheme.primary),
+                        style: AppStyles.text14PxBold.copyWith(color: AppCoreTheme.primaryColor),
                         recognizer: TapGestureRecognizer()..onTap = c.onLogin,
                       ),
                     ],

@@ -12,7 +12,7 @@ class PrimaryButton extends StatelessWidget {
     this.isSmall = false,
     this.width,
     this.isFullWidth = true,
-    this.backgroundColor = ColorTheme.primary,
+    this.backgroundColor = AppCoreTheme.primaryColor,
     this.color,
   });
 

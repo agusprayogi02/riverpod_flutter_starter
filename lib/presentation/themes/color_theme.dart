@@ -106,8 +106,6 @@ class ColorTheme {
     950: Color(0xFF292929),
   });
 
-  static const Color primary = Color(0xFF1642A3);
-
   //text colors
   static const Color textDark = Color(0xFF222222);
   static const Color textLight = Color(0xFFCFCFCF);

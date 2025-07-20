@@ -18,7 +18,7 @@ class SnackbarWidget extends StatelessWidget {
   final bool error;
   final Color textColor;
 
-  Color get bgColor => error ? ColorTheme.fabRedBackground : ColorTheme.primary;
+  Color get bgColor => error ? ColorTheme.fabRedBackground : AppCoreTheme.primaryColor;
 
   @override
   Widget build(BuildContext context) {
