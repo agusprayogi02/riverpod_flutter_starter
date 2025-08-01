@@ -10,6 +10,7 @@ import 'package:starter/presentation/components/button/primary_button.dart';
 import 'package:starter/presentation/pages/auth/login/login_page.dart';
 import 'package:starter/presentation/pages/general/dev_mode/dev_mode_page.dart';
 import 'package:starter/presentation/themes/theme.dart';
+import 'package:starter/gen/assets.gen.dart';
 
 part 'on_boarding_controller.dart';
 
@@ -25,8 +26,7 @@ class OnBoardingPage extends HookConsumerWidget {
       body: Column(
         children: [
           const Spacer(),
-          Image.asset(
-            "assets/images/on-boarding-amico.png",
+          Assets.images.onBoardingAmico.image(
             height: 260.r,
           ),
           61.verticalSpacingRadius,
