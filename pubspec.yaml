@@ -112,6 +112,13 @@ flutter_gen:
   integrations:
     flutter_svg: true
 
+  colors:
+    enabled: true
+    outputs:
+      class_name: MyColors
+    inputs:
+      - assets/color/colors.xml
+
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -124,6 +131,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/color/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
